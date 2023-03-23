@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SubsetOfSquaresCreator {
     public Set<Integer> createSubsetOfSquares(List<Integer> sourceList, int lowerBound, int upperBound) {
-      Set<Integer> inter = new HashSet<>();
+      Set<Integer> inter = new TreeSet<>();
 
         for (int i = 0; i < sourceList.size(); i++) {
             if (sourceList.get(i) < 0) {
